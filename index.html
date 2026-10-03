@@ -80,11 +80,11 @@
         <div id="welcome-screen">
             <div class="ubt-top-banner">
                 <img src="https://i.imgur.com/sqGFBFw.jpeg" alt="HRD Logo" class="header-logo">
-                <span class="header-title-text">HRDK UBT - READING TEST</span>
+                <span class="header-title-text">HRDK UBT - READING TEST </span>
                 <img src="https://i.imgur.com/KoJ00JT.jpeg" alt="Gxoker Logo" class="header-logo">
             </div>
             <div class="header-banner"><img src="https://i.imgur.com/fq28vPm.jpeg" alt="Banner"></div>
-            <div class="title-container"><div class="title-text">Created By Gxoker EPS-TOPIK</div></div>
+            <div class="title-container"><div class="title-text">Created By Gxoker EPS-TOPIK </div></div>
             <div class="login-bottom-logos">
                 <img src="https://i.imgur.com/sqGFBFw.jpeg" alt="HRD">
                 <img src="https://i.imgur.com/KoJ00JT.jpeg" alt="Gxoker">
@@ -98,7 +98,7 @@
                 <input type="text" id="passport-field" class="form-input" placeholder="ဥပမာ- MH-3568**" autocomplete="off">
             </div>
             <div class="input-group">
-                <div class="info-label">SECTOR (လုပ်ငန်းစိပ်)</div>
+                <div class="info-label">SECTOR (လုပ်ငန်းခွင်)</div>
                 <select id="sector-field" class="form-select">
                     <option value="Manufacturing (제조업)">Manufacturing (제조업) - ထုတ်လုပ်ရေး</option>
                     <option value="Agriculture (농축산업)">Agriculture (농축산업) - စိုက်ပျိုးမွေးမြူရေး</option>
@@ -127,7 +127,7 @@
             <button class="btn-submit" onclick="finishExam()">SUBMIT (အဖြေတင်သွင်းမည်)</button>
         </div>
 
-        <!-- Result Screen -->
+        <!-- Result Screen (Gxoker Logo အပြည့်အစုံပါဝင်သော Banner) -->
         <div id="result-screen">
             <div class="ubt-top-banner">
                 <img src="https://i.imgur.com/sqGFBFw.jpeg" alt="HRD Logo" class="header-logo">
@@ -169,38 +169,38 @@
     </div>
         <script>
     const allQuestions = [
-        { q: "1. 작업장에 들어가기 전에 안전모를 ______ 턱끈을 단단히 조여 매십시오.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쓰고 나서", "쓰면서", "쓰려고", "쓰느라고"], c: 0 },
-        { q: "2. 프레스 기계를 점검하지 않고 바로 ______ 손을 다칠 뻔했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["작동시키다가", "작동시키려고", "작동시키려면", "작동시키는 바람에"], c: 0 },
-        { q: "3. 연장통 안에 든 공구들을 제자리에 잘 ______ 다음 작업자가 찾기 쉽습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["정리해 둬야", "정리해 봐야", "정리하느라고", "정리하더라도"], c: 0 },
-        { q: "4. 지게차 면허증을 ______ 주말마다 중장비 학원에 다니고 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["따려고", "따러", "따면", "따느라고"], c: 0 },
-        { q: "5. 이번 주말에는 기숙사에만 ______ 시내에 나가서 장을 봅시다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["있지 말고", "있지 않고", "있지 않아서", "있지 못해서"], c: 0 },
-        { q: "6. 내일 아침 일찍 트럭에 ______ 상자들을 미리 창고 앞에 옮겨 놓으세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["실을", "싣는", "실은", "싣을"], c: 0 },
-        { q: "7. 퇴근하기 전에 공장 창문을 닫고 난방기 전원을 ______ 꼭 확인하세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["껐는지", "끄도록", "끄느라고", "끄려면"], c: 0 },
-        { q: "8. 손목을 다치는 바람에 무거운 상자를 혼자 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["들 수 없어요", "든 적이 없어요", "들지 않아요", "들려고 해요"], c: 0 },
-        { q: "9. 기숙사 세탁기가 고장 나는 ______ 손빨래를 할 수밖에 없었습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["바람에", "탓으로", "대신에", "겸해서"], c: 0 },
-        { q: "10. 공구함에 남아 있는 스패너가 이것밖에 없어서 다른 공구를 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쓸 줄 몰라요", "쓸 수밖에 없어요", "쓸 뻔했어요", "쓴 적이 없어요"], c: 1 },
-        { q: "11. 작업장에 화재가 발생했을 때는 승강기를 이용하______ 비상계단을 통해 대피해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["지 않도록", "지 말고", "지 않아서", "지 못하게"], c: 1 },
-        { q: "12. 이 기계는 조작법이 간단해서 사용 설명서를 한 번만 ______ 누구나 쉽게 다룰 수 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["읽어 봐야", "읽어 보면", "읽어 보느라고", "읽어 보려면"], c: 1 },
-        { q: "13. 페인트 냄새가 너무 독해서 창문을 모두 열어 환기를 ______ 두통이 가라앉지 않았습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["시키기는커녕", "시켰는데도", "시키는 바람에", "시키다시피"], c: 1 },
-        { q: "14. 용접 작업을 할 때는 불꽃이 튀어 눈을 ______ 반드시 보안경을 착용해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["다치도록", "다치지 않게", "다치는 대신에", "다칠 겸 해서"], c: 1 },
-        { q: "15. 어제 새로 들어온 부품을 창고 구석에 ______ 반장님이 어디에 두었냐고 물어보셨습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쌓아 놓았더니", "쌓아 놓느라고", "쌓아 놓으려면", "쌓아 놓더라도"], c: 0 },
-        { q: "16. 오늘 작업량은 혼자서 다 끝내기에는 양이 너무 ______ 동료에게 도움을 요청했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["많을 뿐만 아니라", "많을 지경이라서", "많은 셈이라서", "많을 정도로"], c: 1 },
-        { q: "17. 프레스 기계를 점검하지 않고 무리하게 작동시키다가는 큰 사고가 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["날 뻔했습니다", "나기 마련입니다", "날 리가 없습니다", "날 모양입니다"], c: 1 },
-        { q: "18. 한국에 온 지 얼마 안 되었을 때는 한국어를 잘 못해서 고향에 ______ 적이 많았습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["돌아가고 싶었던", "돌아갈 만한", "돌아가도록 한", "돌아가야 했던"], c: 0 },
-        { q: "19. 가: 투안 씨, 지게차 정비는 다 끝났어요?\n나: 네, 볼트만 몇 개 더 조이면 거의 다 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["끝난 셈이에요", "끝날 리가 없어요", "끝나기 마련이에요", "끝나는 바람이에요"], c: 0 },
-        { q: "20. 안전 수칙을 지키는 것은 아무리 강조______ 지나치지 않습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["해도", "하더라도", "해야", "하거든"], c: 0 },
-        { q: "21. 작업장 바닥에 기름이 묻어 있어서 미끄러우______ 조심해서 걸어가십시오.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["워서", "우니까", "운데", "울 텐데"], c: 1 },
-        { q: "22. 어젯밤에 갑자기 정전이 ______ 냉장고에 보관하던 고기가 다 상해 버렸습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["되는 바람에", "되느라고", "되려고", "되더라도"], c: 0 },
-        { q: "23. 이번 주말에는 숙소에만 ______ 가까운 공원에 가서 운동도 하고 산책도 합시다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["있지 않고", "있지 말고", "있지 않아서", "있지 못해서"], c: 1 },
-        { q: "24. 저는 한국 요리 만드는 법을 잘 ______ 지금은 재료가 없어서 만들 수 없어요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["알 수 있지만", "알 줄 알지만", "몰라도 되지만", "알았지만"], c: 1 },
-        { q: "25. 내일 아침 일찍 출고해야 할 부품이니까 상자에 잘 포장해서 팔레트 위에 ______ 퇴근하세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["올려 버리고", "올려 두고", "올리는 바람에", "올릴 뿐이고"], c: 1 },
-        { q: "26. 오늘 야간 작업을 하면 피곤______ 낮에 기숙사에서 잠을 충분히 자 두세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["할 텐데", "할 테니까", "하느라고", "하려면"], c: 1 },
-        { q: "27. 고향 친구도 만나고 한국어 공부도 ______ 이번 일요일에 외국인력지원센터에 가기로 했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["할 겸 해서", "하려고 해서", "하느라고 해서", "한 적이 있어서"], c: 0 },
-        { q: "28. 가: 칸 씨, 이번 주말에 고향 음식점에 같이 갈래요?\n나: 미안해요. 이번 주말에는 잔업이 있어서 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["간 적이 없어요", "가지 못해요", "가지 마세요", "가지 않으려고 해요"], c: 1 },
-        { q: "29. 이 공장에서 용접 일을 ______ 벌써 반년이 지났지만 아직 배울 것이 많습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["시작하기 전에", "시작한 지", "시작하려고", "시작하면서부터"], c: 1 },
-        { q: "30. 소음이 심하고 먼지가 ______ 작업장에서는 반드시 방진마스크와 귀마개를 착용해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["많은", "많는", "많을", "많았던"], c: 0 }
+        { q: "1. 작업장에 들어가기 전에 안전모를 ______ 턱끈을 단단히 조여 매십시오.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쓰면서", "쓰려고", "쓰고 나서", "쓰느라고"], c: 2 },
+        { q: "2. 프레스 기계를 점검하지 않고 바로 ______ 손을 다칠 뻔했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["작동시키려고", "작동시키려면", "작동시키는 바람에", "작동시키다가"], c: 3 },
+        { q: "3. 연장통 안에 든 공구들을 제자리에 잘 ______ 다음 작업자가 찾기 쉽습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["정리해 봐야", "정리해 둬야", "정리하느라고", "정리하더라도"], c: 1 },
+        { q: "4. 지게차 면허증을 ______ 주말마다 중장비 학원에 다니고 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["따러", "따면", "따려고", "따느라고"], c: 2 },
+        { q: "5. 이번 주말에는 기숙사에만 ______ 시내에 나가서 장을 봅시다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["있지 않고", "있지 않아서", "있지 못해서", "있지 말고"], c: 3 },
+        { q: "6. 내일 아침 일찍 트럭에 ______ 상자들을 미리 창고 앞에 옮겨 놓으세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["싣는", "실을", "실은", "싣을"], c: 1 },
+        { q: "7. 퇴근하기 전에 공장 창문을 닫고 난방기 전원을 ______ 꼭 확인하세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["끄도록", "끄느라고", "껐는지", "끄려면"], c: 2 },
+        { q: "8. 손목을 다치는 바람에 무거운 상자를 혼자 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["든 적이 없어요", "들지 않아요", "들려고 해요", "들 수 없어요"], c: 3 },
+        { q: "9. 기숙사 세탁기가 고장 나는 ______ 손빨래를 할 수밖에 없었습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["탓으로", "바람에", "대신에", "겸해서"], c: 1 },
+        { q: "10. 공구함에 남아 있는 스패너가 이것밖에 없어서 다른 공구를 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쓸 줄 몰라요", "쓸 뻔했어요", "쓸 수밖에 없어요", "쓴 적이 없어요"], c: 2 },
+        { q: "11. 작업장에 화재가 발생했을 때는 승강기를 이용하______ 비상계단을 통해 대피해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["지 말고", "지 않도록", "지 않아서", "지 못하게"], c: 0 },
+        { q: "12. 이 기계는 조작법이 간단해서 사용 설명서를 한 번만 ______ 누구나 쉽게 다룰 수 있습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["읽어 봐야", "읽어 보느라고", "읽어 보려면", "읽어 보면"], c: 3 },
+        { q: "13. 페인트 냄새가 너무 독해서 창문을 모두 열어 환기를 ______ 두통이 가라앉지 않았습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["시켰는데도", "시키기는커녕", "시키는 바람에", "시키다시피"], c: 0 },
+        { q: "14. 용접 작업을 할 때는 불꽃이 튀어 눈을 ______ 반드시 보안경을 착용해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["다치도록", "다치는 대신에", "다치지 않게", "다칠 겸 해서"], c: 2 },
+        { q: "15. 어제 새로 들어온 부품을 창고 구석에 ______ 반장님이 어디에 두었냐고 물어보셨습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["쌓아 놓느라고", "쌓아 놓으려면", "쌓아 놓더라도", "쌓아 놓았더니"], c: 3 },
+        { q: "16. 오늘 작업량은 혼자서 다 끝내기에는 양이 너무 ______ 동료에게 도움을 요청했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["많을 지경이라서", "많을 뿐만 아니라", "많은 셈이라서", "많을 정도로"], c: 0 },
+        { q: "17. 프레스 기계를 점검하지 않고 무리하게 작동시키다가는 큰 사고가 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["날 뻔했습니다", "날 리가 없습니다", "나기 마련입니다", "날 모양입니다"], c: 2 },
+        { q: "18. 한국에 온 지 얼마 안 되었을 때는 한국어를 잘 못해서 고향에 ______ 적이 많았습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["돌아갈 만한", "돌아가고 싶었던", "돌아가도록 한", "돌아가야 했던"], c: 1 },
+        { q: "19. 가: 민민엉 씨, 지게차 정비는 다 끝났어요?\n나: 네, 볼트만 몇 개 더 조이면 거의 다 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["끝날 리가 없어요", "끝나기 마련이에요", "끝나는 바람이에요", "끝난 셈이에요"], c: 3 },
+        { q: "20. 안전 수칙을 지키는 것은 아무리 강조______ 지나치지 않습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["하더라도", "해야", "해도", "하거든"], c: 2 },
+        { q: "21. 작업장 바닥에 기름이 묻어 있어서 미끄러우______ 조심해서 걸어가십시오.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["우니까", "워서", "운데", "울 텐데"], c: 0 },
+        { q: "22. 어젯밤에 갑자기 정전이 ______ 냉장고에 보관하던 고기가 다 상해 버렸습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["되느라고", "되는 바람에", "되려고", "되더라도"], c: 1 },
+        { q: "23. 이번 주말에는 숙소에만 ______ 가까운 공원에 가서 운동도 하고 산책도 합시다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["있지 않고", "있지 않아서", "있지 못해서", "있지 말고"], c: 3 },
+        { q: "24. 저는 한국 요리 만드는 법을 잘 ______ 지금은 재료가 없어서 만들 수 없어요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["알 줄 알지만", "알 수 있지만", "몰라도 되지만", "알았지만"], c: 0 },
+        { q: "25. 내일 아침 일찍 출고해야 할 부품이니까 상자에 잘 포장해서 팔레트 위에 ______ 퇴근하세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["올려 버리고", "올리는 바람에", "올려 두고", "올릴 뿐이고"], c: 2 },
+        { q: "26. 오늘 야간 작업을 하면 피곤______ 낮에 기숙사에서 잠을 충분히 자 두세요.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["할 텐데", "하느라고", "하려면", "할 테니까"], c: 3 },
+        { q: "27. 고향 친구도 만나고 한국어 공부도 ______ 이번 일요일에 외국인력지원센터에 가기로 했습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["하려고 해서", "할 겸 해서", "하느라고 해서", "한 적이 있어서"], c: 1 },
+        { q: "28. 가: 미미야 씨, 이번 주말에 고향 음식점에 같이 갈래요?\n나: 미안해요. 이번 주말에는 잔업이 있어서 ______.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["간 적이 없어요", "가지 마세요", "가지 못해요", "가지 않으려고 해요"], c: 2 },
+        { q: "29. 이 공장에서 용접 일을 ______ 벌써 반년이 지났지만 아직 배울 것이 많습니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["시작한 지", "시작하기 전에", "시작하려고", "시작하면서부터"], c: 0 },
+        { q: "30. 소음이 심하고 먼지가 ______ 작업장에서는 반드시 방진마스크와 귀마개를 착용해야 합니다.\n<img src='https://i.imgur.com/KoJ00JT.jpeg' class='watermark'>", a: ["많는", "많을", "많았던", "많은"], c: 3 }
     ];
-              let currentIndex = 0;
+           let currentIndex = 0;
     let userAns = [];
     let studentName = "";
     let studentPassport = "";
